@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SiWdProc2.exe" version="1.0.0.0" publicKeyToken="464108ef42bab598" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SiWdProc2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SiWdProc2.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Windows.Controls.Ribbon" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SiWdProc2.exe" size="78760">
+      <assemblyIdentity name="SiWdProc2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>AEgc7QDxmOoLkaLqEPnDq9FJVfYNR7VA+m0VtrX6vYc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="SiWdProc2.exe.config" size="620">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NyVErTISEuwVy32hlcGXzuxI2grwKBE9oIJ93s5a1io=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=W8240\Colin" issuerKeyHash="9313ad739238695f3c33c233422d0a09e8929fb5" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>aTedXZ9x6PfvPWi7v6tipY9ytvE37Vhnx13eZ8W1Uzw=</DigestValue></Reference></SignedInfo><SignatureValue>U0JFgslK7GjJkSKb4aUM/c0vTSFlEVhE+7D9dAtphLxYTgNkJFfnrDTXd9rKicqTHD9I3oS4B9ZmGZzzD6381di3oAurS3KaU/xMGSEAuUslJMhBlBNPNSR+IA18qapYQG7EtE8BgZdCR1mzj9IyZT9N+2x/pTz6rcec9xjOfOw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>7q2FSlJhdf/dv5B+W3ns9hUCw621Ct188G7oU0oSfXXzj9nyuSgvujYpJ9p7E3gGUBXYRYaWM4yinvwW2EvC7ZDwa8XWu0oMqU40Nr6I9rRhLySPc+zLPOeSXydxCl5Kq2ga7oJA+iWs+KthZAd2kbQt0u/aIqhVJmrWZn2VLac=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3c53b5c567de5dc76758ed37f1b6728fa562abbfbb683deff7e8719f5d9d3769" Description="" Url=""><as:assemblyIdentity name="SiWdProc2.exe" version="1.0.0.0" publicKeyToken="464108ef42bab598" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=W8240\Colin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SQ14KkaH/bR5LO5pKA8aZxDrSdUXoKFtT61BYq/LrGE=</DigestValue></Reference></SignedInfo><SignatureValue>IL3IFciayC1WOGtLYpatnxJVi5MNrfjpaCKyh1QH85J6eXBsoZaR5AAjSKSHgQLCqhKqJmQgxhm2CbGZyrqsefMDJ/qJfTxJkUypQkNJZ0b5xMoiIPNqD7B2uadrl6jfjCUDwbbNv3tKkSo+CjoKCCF7L8f9GwzPGaz+QnGYDI0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>7q2FSlJhdf/dv5B+W3ns9hUCw621Ct188G7oU0oSfXXzj9nyuSgvujYpJ9p7E3gGUBXYRYaWM4yinvwW2EvC7ZDwa8XWu0oMqU40Nr6I9rRhLySPc+zLPOeSXydxCl5Kq2ga7oJA+iWs+KthZAd2kbQt0u/aIqhVJmrWZn2VLac=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQHJicfnLEeYVPIgGeIDI+wTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYAVwA4ADIANAAwAFwAQwBvAGwAaQBuMB4XDTE3MDYxMzA4MTI1N1oXDTE4MDYxMzE0MTI1N1owITEfMB0GA1UEAx4WAFcAOAAyADQAMABcAEMAbwBsAGkAbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA7q2FSlJhdf/dv5B+W3ns9hUCw621Ct188G7oU0oSfXXzj9nyuSgvujYpJ9p7E3gGUBXYRYaWM4yinvwW2EvC7ZDwa8XWu0oMqU40Nr6I9rRhLySPc+zLPOeSXydxCl5Kq2ga7oJA+iWs+KthZAd2kbQt0u/aIqhVJmrWZn2VLacCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCeYOXccN6NeShRgViUCO3++Gy00qA4TDdOM5OFd/ornR1DBOY+273Mb1NDFIiVWatS4dTeqtgHRM+rl+4SZgHCsF8+seVMplL48y6nFgmMJFq7/HWp25PjKJe6BPHMUm5+LyNrkKsih7kBaoSY7ot45+LBu5UO/ad2YURMT0Wt4Q==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
