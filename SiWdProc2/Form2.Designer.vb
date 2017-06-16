@@ -41,17 +41,19 @@ Partial Class Form2
         'Panel1
         '
         Me.Panel1.AutoScroll = True
+        Me.Panel1.AutoSize = True
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(13, 42)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1339, 615)
+        Me.Panel1.Size = New System.Drawing.Size(1364, 669)
         Me.Panel1.TabIndex = 2
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 43)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1333, 612)
+        Me.PictureBox1.Size = New System.Drawing.Size(1333, 569)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -70,6 +72,7 @@ Partial Class Form2
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
