@@ -54,7 +54,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nsX1qz7O41A/YZk9F/mlutzDi7glMtOABpgrL4sIQbE=</dsig:DigestValue>
+        <dsig:DigestValue>0YlrLPFLPymIRM9omFmmVJAFzXdwaOSLOBuvJ7HCYaw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZPBlib.dll" size="28672">
+      <assemblyIdentity name="ZPBlib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4XyioEfItHWnEQPhmAc0UJthiTTvoKdQKRXoL0mUAIk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

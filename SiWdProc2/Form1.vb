@@ -183,6 +183,7 @@ Public Class Form1
         If (RichTextBox1.Lines.Count = 0) Then
             Return
         End If
+        Dim Image1 As Bitmap
         Dim rowIndex As Int32 = RichTextBox1.GetLineFromCharIndex(RichTextBox1.SelectionStart)
 
         Dim test As Boolean = RichTextBox1.Lines(rowIndex).Contains("<p><a href=")
@@ -197,8 +198,8 @@ Public Class Form1
         Dim address = line.Substring(12, line.Length - 12)
         Dim cIndex = address.IndexOf(""">")
         address = address.Substring(0, cIndex)
-
-        Form2.PictureBox1.ImageLocation = address
+        Image1 = Image.FromFile(address)
+        Form2.zpb1.Image = Image1
         If My.Computer.FileSystem.FileExists(address) = False Then
             MessageBox.Show("File does not exist", "", MessageBoxButtons.OK)
             Form2.Hide()
@@ -207,28 +208,28 @@ Public Class Form1
         Form2.Show()
 
 
-        Dim bmp As New Bitmap(address)
-        Dim h = bmp.Height
-        Dim w = bmp.Width
-        If (h > 900 Or w > 1300) Then
-            Form2.Height = 940
-            Form2.Width = 1300
-            Form2.PictureBox1.Height = 900
-            Form2.PictureBox1.Width = 1300
+        'Dim bmp As New Bitmap(address)
+        'Dim h = bmp.Height
+        'Dim w = bmp.Width
+        'If (h > 900 Or w > 1300) Then
+        '    Form2.Height = 940
+        '    Form2.Width = 1300
+        '    Form2.PictureBox1.Height = 900
+        '    Form2.PictureBox1.Width = 1300
 
-        Else
-            Form2.Height = h + 40
-            Form2.Width = w
-            Form2.PictureBox1.Height = h
-            Form2.PictureBox1.Width = w
-        End If
-        Form2.PictureBox1.Visible = True
+        'Else
+        '    Form2.Height = h + 40
+        '    Form2.Width = w
+        '    Form2.PictureBox1.Height = h
+        '    Form2.PictureBox1.Width = w
+        'End If
+        'Form2.PictureBox1.Visible = True
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim fileReader As System.IO.StreamReader
         fileReader =
-        My.Computer.FileSystem.OpenTextFileReader("D:\VB_projects\SiWdProc2\init.txt")
+        My.Computer.FileSystem.OpenTextFileReader("D:\VB_projects\SiWdProc2\SiWdProc2\init.txt")
         Dim stringReader As String
         stringReader = fileReader.ReadLine()
         If stringReader = "*LINKS FILE*" Then

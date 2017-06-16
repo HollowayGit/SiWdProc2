@@ -31,7 +31,7 @@
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Panel1.AutoScroll = True
-        PictureBox1.SizeMode = PictureBoxSizeMode.AutoSize
+        'PictureBox1.SizeMode = PictureBoxSizeMode.AutoSize
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -42,11 +42,11 @@
 
     End Sub
 
-    Private Sub PictureBox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
+    Private Sub PictureBox1_MouseDown(sender As Object, e As MouseEventArgs)
         m_PanStartPoint = New Point(e.X, e.Y)
     End Sub
 
-    Private Sub PictureBox1_MouseMove(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseMove
+    Private Sub PictureBox1_MouseMove(sender As Object, e As MouseEventArgs)
         If e.Button = Windows.Forms.MouseButtons.Left Then
             Dim deltaX As Integer = (m_PanStartPoint.X - e.X)
             Dim deltaY As Integer = (m_PanStartPoint.Y - e.Y)
@@ -54,5 +54,9 @@
                 New Drawing.Point((deltaX - Panel1.AutoScrollPosition.X),
                                   (deltaY - Panel1.AutoScrollPosition.Y))
         End If
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 End Class
